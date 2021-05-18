@@ -1573,4 +1573,121 @@ La barre du millieu
 #secondary {
   padding-left: 8%;
 }
+
+body.category-cours {
+  width: 100%;
+}
+
+.cours {
+  margin: 0;
+}
+
+.grille {
+  display: grid;
+  grid-template-areas: 'session1 cours1 cours1 cours1 cours1' 'session2 cours2 cours2 cours2 cours2' 'session3 cours3 cours3 cours3 cours3' 'session4 cours4 cours4 cours4 cours4' 'session5 cours5 cours5 cours5 cours5' 'session6 cours6 cours6 cours6 cours6';
+  grid-gap: 10px;
+}
+
+.grille h2:nth-of-type(2) {
+  grid-area: session1;
+}
+
+.grille h2:nth-of-type(3) {
+  grid-area: session2;
+}
+
+.grille h2:nth-of-type(4) {
+  grid-area: session3;
+}
+
+.grille h2:nth-of-type(5) {
+  grid-area: session4;
+}
+
+.grille h2:nth-of-type(6) {
+  grid-area: session5;
+}
+
+.grille h2:nth-of-type(7) {
+  grid-area: session6;
+}
+
+.sessionUn {
+  grid-area: cours1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionUn article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.sessionDeux {
+  grid-area: cours2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionDeux article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.sessionTrois {
+  grid-area: cours3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionTrois article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.sessionQuatre {
+  grid-area: cours4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionQuatre article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.sessionCinq {
+  grid-area: cours5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sessionCinq article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.sessionSix {
+  grid-area: cours6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sessionSix article {
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 100px;
+  padding-left: 100px;
+}
 /*# sourceMappingURL=style.css.map */

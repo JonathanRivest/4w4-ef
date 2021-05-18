@@ -24,6 +24,7 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 			<section class="cours">
+            <section class = "grille"> <!-- Fait pour contrôler la grille -->
 			<?php
 			/* Start the Loop */
             $precedent = "XXXXXX";
@@ -41,7 +42,7 @@ get_header();
 						<?php endif; ?>
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['session'] ?></h2>
-					<section <?php echo class_composant($tPropriété['session']) ?>>
+					<section <?php echo class_session($tPropriété['session']) ?>>
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique', 'Conception', 'Image 2d/3d']) ) : 
@@ -50,6 +51,7 @@ get_header();
 				endif;	
 				$precedent = $tPropriété['session'];
 			endwhile;?>
+            </section> <!-- fin section grille -->
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
 		
@@ -59,7 +61,6 @@ get_header();
 	</main><!-- #main -->
 
 <?php 
-// get_sidebar();
 get_footer();
 
 function convertirTableau(&$tPropriété)
@@ -91,3 +92,29 @@ function class_composant($typeCours){
 		return 'class="bloc"';
 	}
 }
+
+function class_session($session){
+
+
+	if ($session == '1'){
+		return 'class="sessionUn"';
+	}
+	if ($session == '2'){
+		return 'class="sessionDeux"';
+	}
+    if ($session == '3'){
+		return 'class="sessionTrois"';
+	}
+    if ($session == '4'){
+		return 'class="sessionQuatre"';
+	}
+    if ($session == '5'){
+		return 'class="sessionCinq"';
+	}
+    if ($session == '6'){
+		return 'class="sessionSix"';
+	}
+}
+
+
+
