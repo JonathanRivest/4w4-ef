@@ -1664,6 +1664,14 @@ body.category-cours {
   padding-left: 40px;
 }
 
+.sessionQuatre article:nth-of-type(3) {
+  border: 1px dashed black;
+}
+
+.sessionQuatre article:nth-of-type(4) {
+  border: 1px dashed black;
+}
+
 .sessionCinq {
   grid-area: cours5;
   display: flex;
@@ -1675,6 +1683,22 @@ body.category-cours {
   border: 1px solid black;
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.sessionCinq article:nth-of-type(1) {
+  border: 1px dashed black;
+}
+
+.sessionCinq article:nth-of-type(2) {
+  border: 1px dashed black;
+}
+
+.sessionCinq article:nth-of-type(3) {
+  border: 1px dashed black;
+}
+
+.sessionCinq article:nth-of-type(4) {
+  border: 1px dashed black;
 }
 
 .sessionSix {

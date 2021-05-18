@@ -80,6 +80,12 @@ width: 100%;
         padding-right: 40px;
         padding-left: 40px;
     }
+    article:nth-of-type(3) {
+        border: 1px dashed black;
+    }
+    article:nth-of-type(4) {
+        border: 1px dashed black;
+    }
   }
 .sessionCinq {
     grid-area: cours5;
@@ -90,6 +96,18 @@ width: 100%;
         border: 1px solid black;
         padding-right: 40px;
         padding-left: 40px;
+    }
+    article:nth-of-type(1) {
+        border: 1px dashed black;
+    }
+    article:nth-of-type(2) {
+        border: 1px dashed black;
+    }
+    article:nth-of-type(3) {
+        border: 1px dashed black;
+    }
+    article:nth-of-type(4) {
+        border: 1px dashed black;
     }
   }
 .sessionSix {
